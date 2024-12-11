@@ -1,7 +1,7 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import dotenv from 'dotenv';
-import schoolRoutes from './routes/schoolRoutes.js';
+import schoolRoutes from './routes/schoolRoutes.js'
 
 dotenv.config();
 
