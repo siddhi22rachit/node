@@ -11,7 +11,9 @@ app.use(bodyParser.json());
 // Routes
 app.use('/api/schools', schoolRoutes);
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
+// Test endpoint
+app.get('/', (req, res) => {
+    res.send('API is running...');
 });
+
+export default app;
